@@ -8,3 +8,15 @@ before_install:
 
 script:
   - docker run -e CI=true oojsmile/docker-react npm run test
+
+# deploy:
+#   provider: elastikbeanstalk
+#   region: "<region>"
+#   app: "<appName>"
+#   env: "<envName>"
+#   bucket_name: "<bucket_name>"
+#   bucket_path: "<appName>"
+#   on:
+#     branch: master
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key: $AWS_SECRET_KEY
